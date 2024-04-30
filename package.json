@@ -5,6 +5,8 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
@@ -16,6 +18,7 @@
   },
   "devDependencies": {
     "@nuxt/eslint": "^0.3.10",
+    "@nuxtjs/google-fonts": "^3.2.0",
     "eslint": "^9.1.1",
     "sass": "^1.75.0"
   },
