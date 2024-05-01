@@ -3,6 +3,7 @@
 
 <template>
     <div class="header-container">
+        <a>Ana Nishimoto</a>
         <a>About</a>
         <a>Experiences</a>
         <a>Hobbies</a>
@@ -15,6 +16,7 @@
 
 .header-container {
     position: fixed;
+    height: 8vh;
     top: 0;
     left: 0;
     z-index: 1;
@@ -26,7 +28,7 @@
     justify-content: center;
     
     a {
-        margin: 10px;
+        margin: 20px;
     }
 }
 

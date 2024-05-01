@@ -1,5 +1,10 @@
+<script>
+
+</script>
+
 <template>
     <div class="footer-container">
+        <font-awesome-icon icon="fa-brands fa-instagram" />
         <p>Footer</p>
     </div>
 </template>
@@ -8,9 +13,8 @@
 @import '../assets/scss/variables.scss';
 
 .footer-container {
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    position: absolute;
+    height: 100px;
     width: 100%;
     background:$bg-header-footer-color;
     border: $footer-border;
