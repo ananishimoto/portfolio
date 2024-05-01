@@ -1,21 +1,19 @@
 <template>
     <div class="content-container">
-        <h2>Hi, I'm Ana</h2>
-        <p>I create application</p>
-        <p>I also do photography</p>
-        <p>And sometimes I crochet</p>
+        <IntroSection />
+        <ContactForm />
     </div>
 </template>
 
 <style lang="scss" scoped>
+@import '../assets/scss/variables.scss';
 
 .content-container {
-    width: 100%;
-    height: 500px;
+    padding-top: 50px;
+    height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-    border: 2px solid green;
+    justify-content: space-around;
     flex-direction: column;
 }
 
