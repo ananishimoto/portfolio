@@ -7,6 +7,18 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxtjs/google-fonts'
   ],
+  build: {
+    transpile: [
+      '@fortawesome/vue-fontawesome',
+      '@fortawesome/fontawesome-svg-core',
+      '@fortawesome/free-solid-svg-icons',
+      '@fortawesome/free-regular-svg-icons',
+      '@fortawesome/free-brands-svg-icons'
+    ]
+  },
+  css: [
+    '@fortawesome/fontawesome-svg-core/styles.css'
+  ],
   eslint: {
     config: {
       standalone: true,
@@ -19,5 +31,5 @@ export default defineNuxtConfig({
       download: true,
       inject: true
     }
-  }
+  },
 })
