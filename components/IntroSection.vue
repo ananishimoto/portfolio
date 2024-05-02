@@ -17,6 +17,18 @@
 <style lang="scss" scoped>
 @import '../assets/scss/variables.scss';
 
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 .intro-section-container {
     height: 100vh;
     display: flex;
@@ -30,14 +42,17 @@
 }
 
 .intro-section-container__title_name {
+    animation: transitionIn 2.5s;
     font-size: 100px;
 }
 
 .intro-section-container__title_details {
+    animation: transitionIn 2.5s;
     font-size: 30px;
 }
 
 .intro-section-container__picture {
+    animation: transitionIn 1.5s;
     display: flex;
     justify-content: center;
     width: 30%;
