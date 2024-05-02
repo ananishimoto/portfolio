@@ -1,13 +1,13 @@
 <template>
     <div class="intro-section-container">
+        <div class="intro-section-container__picture">
+            <img src="../assets/images/profile-pic.jpg"/>
+        </div>
         <div class="intro-section-container__title">
             <h2 class="intro-section-container__title_name">Hi, I'm Ana</h2>
             <p class="intro-section-container__title_details">I create applications</p>
-            <p class="intro-section-container__title_details">I also do photography</p>
+            <p class="intro-section-container__title_details">I do photography</p>
             <p class="intro-section-container__title_details">And sometimes I crochet</p>
-        </div>
-        <div class="intro-section-container__picture">
-            <img src="../assets/images/duck_pic.jpg"/>
         </div>
     </div>
 </template>
@@ -18,11 +18,10 @@
 @import '../assets/scss/variables.scss';
 
 .intro-section-container {
-    padding-top: 50px;
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-direction: row;
 }
 
@@ -41,9 +40,10 @@
 .intro-section-container__picture {
     display: flex;
     justify-content: center;
+    width: 30%;
     
     img {
-        width: 70%;
+        width: 100%;
         border-radius: 20%;
     }
 

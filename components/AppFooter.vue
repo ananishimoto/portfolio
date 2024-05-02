@@ -21,7 +21,6 @@
 @import '../assets/scss/variables.scss';
 
 .footer-container {
-    position: absolute;
     height: 100px;
     width: 100%;
     background:$bg-header-footer-color;
