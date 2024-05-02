@@ -1,6 +1,9 @@
 <template>
     <div class="content-container">
         <IntroSection />
+        <AboutMe />
+        <WorkExperience />
+        <Hobbies />
         <ContactForm />
     </div>
 </template>
@@ -10,7 +13,6 @@
 
 .content-container {
     padding-top: 50px;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-around;

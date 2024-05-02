@@ -10,9 +10,9 @@
         </div>
         <div class="footer-social-media">
             <a href="https://www.linkedin.com/in/ana-nishimoto/"><font-awesome-icon icon="fa-brands fa-linkedin-in" class="social-media-icon" /></a>
+            <a href="https://github.com/ananishimoto"><font-awesome-icon icon="fa-brands fa-github" class="social-media-icon" /></a>
             <a href="https://www.instagram.com/ana.nishimoto/"><font-awesome-icon icon="fa-brands fa-instagram" class="social-media-icon" /></a>
             <a href="https://www.behance.net/ana_nishimoto"><font-awesome-icon icon="fa-brands fa-behance" class="social-media-icon" /></a>
-            <a href="https://github.com/ananishimoto"><font-awesome-icon icon="fa-brands fa-github" class="social-media-icon" /></a>
         </div>
     </div>
 </template>
