@@ -43,24 +43,24 @@
 .intro-section-container__title {
     flex-direction: column;
     margin: 10% 0;
-    width: 65vw;
+    width: 60vw;
 }
 
 .intro-section-container__title_name {
     animation: transitionIn 2.5s;
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 .intro-section-container__title_details {
     animation: transitionIn 2.5s;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 .intro-section-container__picture {
     animation: transitionIn 1.5s;
     display: flex;
     justify-content: center;
-    width: 65vw;
+    width: 60vw;
     
     img {
         width: 100%;

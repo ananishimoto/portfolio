@@ -4,7 +4,7 @@
         <AboutMe />
         <WorkExperience />
         <Hobbies />
-        <ContactForm />
+        <!-- <ContactForm /> -->
     </div>
 </template>
 
@@ -12,7 +12,7 @@
 @import '../assets/scss/variables.scss';
 
 .content-container {
-    padding-top: 50px;
+    margin-top: 2rem;
     display: flex;
     align-items: center;
     justify-content: space-around;

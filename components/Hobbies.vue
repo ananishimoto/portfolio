@@ -27,31 +27,39 @@
 
 <style lang="scss" scoped>
 
+@import '../assets/scss/variables.scss';
+
 .other-interests-container {
     width: 80%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    margin: 5%;
 }
 
 .other-interests-title {
-    writing-mode: tb-rl;
-    transform: rotate(-180deg);
-    font-size: 60px;
+    font-size: $mobile-font-size-title;
 }
 
 .other-interests-card {
-    width: 42%;
+    width: 70%;
+    height: 20rem;
+    margin: 5%;
     position: relative;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50px;
-    max-height: 40rem;
 
     img {
-        width: -webkit-fill-available;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     .social-media-container {
@@ -66,7 +74,7 @@
 
         svg {
             color: black;
-            height: 2rem;
+            height: 1.5rem;
         }
     }
 
@@ -75,7 +83,8 @@
     }
 
     .other-interests-card__subheader {
-        font-size: 25px;
+        font-size: 1.3rem;
+        text-align: center;
     }
 }
 
@@ -83,7 +92,7 @@
     visibility: hidden;
     position: absolute;
     display: flex;
-    font-size: 40px;
+    font-size: 1.7rem;
     flex-direction: column;
     align-items: center;
 }
@@ -97,6 +106,32 @@
     img {
     opacity: 0.2;
     filter: blur(5px);
+    }
+}
+
+// Desktop styling 
+
+@media (min-width: 50rem) {
+
+    .other-interests-container {
+        flex-direction: row;
+    }
+
+    .other-interests-card {
+        width: 42%;
+        height: 30rem;
+    }
+
+    .other-interests-title {
+        writing-mode: tb-rl;
+        transform: rotate(-180deg);
+        font-size: $desktop-font-size-title;
+    }
+
+    .social-media-container {
+        svg {
+            height: 2rem;
+        }
     }
 }
 
