@@ -4,7 +4,7 @@
             <img src="../assets/images/profile-pic.jpg"/>
         </div>
         <div class="intro-section-container__title">
-            <h2 class="intro-section-container__title_name">Hi, I'm Ana</h2>
+            <h2 class="intro-section-container__title_name">Hi, I'm Ana!</h2>
             <p class="intro-section-container__title_details">I create applications</p>
             <p class="intro-section-container__title_details">I do photography</p>
             <p class="intro-section-container__title_details">And sometimes I crochet</p>
@@ -32,30 +32,35 @@
 .intro-section-container {
     height: 100vh;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: row;
+    line-height: 1.2;
+    align-content: center;
 }
 
 .intro-section-container__title {
     flex-direction: column;
+    margin: 10% 0;
+    width: 65vw;
 }
 
 .intro-section-container__title_name {
     animation: transitionIn 2.5s;
-    font-size: 100px;
+    font-size: 5rem;
 }
 
 .intro-section-container__title_details {
     animation: transitionIn 2.5s;
-    font-size: 30px;
+    font-size: 1.8rem;
 }
 
 .intro-section-container__picture {
     animation: transitionIn 1.5s;
     display: flex;
     justify-content: center;
-    width: 30%;
+    width: 65vw;
     
     img {
         width: 100%;
@@ -70,6 +75,33 @@
         right: 7rem;
         border-radius: 20%;
         border: $footer-border;
+    }
+}
+
+// Desktop styling
+
+@media (min-width: 50rem) {
+
+    .intro-section-container {
+        flex-wrap: nowrap;
+        width: 100vh;
+    }
+
+    .intro-section-container__picture {
+        width: 25vw;
+    }
+
+    .intro-section-container__title {
+        width: auto;
+        margin: 0 5%;
+    }
+
+    .intro-section-container__title_name {
+        font-size: 7rem;
+    }
+
+    .intro-section-container__title_details {
+        font-size: 2rem;
     }
 }
 

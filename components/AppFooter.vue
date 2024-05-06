@@ -5,7 +5,7 @@
 <template>
     <div class="footer-container">
         <div class="footer-info">
-            <p>Made by Ana Nishimoto</p>
+            <p>All rights reserved</p>
             <p class="footer-info-year">2024</p>
         </div>
         <div class="footer-social-media">

@@ -3,11 +3,7 @@
 
 <template>
     <div class="header-container">
-        <a>Ana Nishimoto</a>
-        <a>About</a>
-        <a>Experiences</a>
-        <a>Hobbies</a>
-        <a>Contact</a>
+        <p>Ana Nishimoto</p>
     </div>
 </template>
 
@@ -26,9 +22,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    a {
-        margin: 20px;
+
+    p {
+        font-weight: bold;
     }
 }
 
