@@ -66,13 +66,15 @@
 
 <style lang="scss" scoped>
 
+@import '../assets/scss/variables.scss';
+
 .work-experience-container {
     margin: 5% 0;
     width: 70%;
     font-size: 20px;
 
     h3 {
-        font-size: 40px;
+        font-size: $mobile-font-size-title;
     }
 }
 
@@ -105,6 +107,14 @@
 .work-experience-description {
     li {
         margin: 10px;
+    }
+}
+
+// Desktop styling
+
+@media (min-width: 50rem) {
+    .work-experience-container h3 {
+        font-size: $desktop-font-size-title-small;
     }
 }
 
