@@ -125,7 +125,7 @@
     .other-interests-title {
         writing-mode: tb-rl;
         transform: rotate(-180deg);
-        font-size: $desktop-font-size-title;
+        font-size: $desktop-font-size-title-medium;
     }
 
     .social-media-container {

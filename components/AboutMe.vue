@@ -26,6 +26,8 @@
 
 <style lang="scss" scoped>
 
+@import '../assets/scss/variables.scss';
+
 .about-me-description-container {
     width: 70%;
     display: flex;
@@ -36,7 +38,7 @@
 
 .about-me-description__header {
     font-weight: bold;
-    font-size: 40px;
+    font-size: $mobile-font-size-title;
     padding-bottom: 2%;
 }
 
@@ -47,11 +49,25 @@
 }
 
 .about-me-description__content {
-    font-size: 20px;
+    font-size: $mobile-font-size-paragraph;
+    line-height: 1.6;
 
     p {
         margin: 2% 0;
     }
 }
+
+// Desktop styling 
+
+@media (min-width: 50rem) {
+    .about-me-description__header {
+        font-size: $desktop-font-size-title-small;
+    }
+
+    .about-me-description__content {
+        font-size: $desktop-font-size-paragraph;
+    }
+}
+
 
 </style>
